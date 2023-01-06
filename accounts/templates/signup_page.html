@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+{{ jrequest }}
+<!-- <form action="">{{form_info}}</form> -->   
+<form action=""  method="POST" class="site-form" >  <!-- article k list naamak url pe jaa    # submit the data to action url   -->
+
+<!-- action is blank implis... that itll send data 2 accounts/signup only. and & this url will fire up the corresponding views function in views.py  -->
+    
+
+    {{form_info}} 
+    {% csrf_token    %}
+    <input type="submit" value="Signup" class="signup_input"> 
+</form>
+{% endblock %}

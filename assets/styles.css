@@ -1,0 +1,159 @@
+body {
+  background-color: #0f121f;
+  background-image: url(/static/stars.png);
+  background-repeat-y: no-repeat;
+  color: #fff;
+}
+
+body * {
+  font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+div.wrapper h1 {
+  text-align: center;
+  font-size: 2.4em;
+  margin: 1px  auto auto;
+  margin-bottom: 70px;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+}
+nav {
+  justify-self: end;
+}
+nav li {
+  display: inline-block;
+  /* padding-right: -10px; */
+}
+nav button {
+  /* border-color: yellow; */
+  background: none;
+  color: rgb(200, 203, 241);
+  cursor: pointer;
+  text-decoration: yellow;
+  border: 1px solid rgb(230, 0, 0);
+  font-size: 1em;
+  border: 200px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+.articles .article {
+  border: solid 2px #00dba0;
+  padding: 10px;
+  padding-bottom: 60px;
+  position: relative; /*See my notepadd for clearance.. htha k dekhega toh frk dikh hi jaayega tjhe!*/
+}
+.articles .article .author {
+  position: absolute;
+  /* padding:10px; */
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background: #015740;
+}
+.article-detail .article {
+  border: solid 2px #00dba0;
+  padding: 5px;
+  /* padding-bottom: 10px;    */
+}
+.article-detail .article img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.article-detail .article p {
+  text-align: center;
+}
+.article-detail .article h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.site-form {
+  /*Delete ths in case if something getting wrong with styles... its not matching so i did it*/
+  border: 2px solid #00dba0;
+  padding: 30px;
+}
+
+.site-form input,
+textarea {
+  display: block;
+  padding: 9px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+button.Highlight {
+  /*That Create_Article button ki class is New_article*/
+  border: solid 1px #00dba0;
+  border-radius: 5px;
+  color: #00dba0;
+  padding: 6px;
+}
+.helptext {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0px;
+  margin: 0 auto 20px;
+  color: #bbb;
+}
+.errorlist li/*when you enter wrong form details then it shows up */ {
+  border: rgb(245, 134, 134) 1px solid;
+  list-style: none;
+  padding: 10px;
+  color: rgb(228, 42, 42);
+  margin-top: 3px;
+}
+.errorlist {
+  padding-left: 0;
+}
+.site-form input[type="submit"] {
+  padding: 15px;
+  font-size: larger;
+  color: #fff;
+  margin: 10px 0;
+  background-color: #00dba0;
+  border-radius: 3px;
+}
+.head_article {
+  display: inline;
+}
+.card-title{
+    text-decoration: underline;
+    font-style: italic;
+    text-transform: capitalize;
+}
+/* .footer {
+ bottom:0;
+text-align: center;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: aquamarine;
+  margin-top:calc(5% + 60px);
+} */

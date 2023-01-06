@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+
+
+{% block content %}
+<h1>Create Your New Article Here!</h1>
+<form action="{% url 'articles:create' %}" method="POST" enctype="multipart/form-data" class="site-form">  <!--Action pe vo wali site likh jaunsa corresponfding function you want to fire! on clicking submit -->
+{{ bjha_hua_form }}
+{% csrf_token %}
+<input type="submit" value="Create it!">
+</form>
+<script src="/static/slugify.js"></script>
+{% endblock %}
+

@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<h1>Log In</h1>
+ <form action="{% url 'accounts:login'   %}" method="POST" class="site-form">  <!--like we used to access the static files -->
+    {% csrf_token %}
+    {{ form }}
+    <!-- Have 2 add in here now hidden type input 2 access the url.. for redirecting at different places when submit functionality -->
+    <!-- know that request is accessible inside the template.. (like dictionary is accessible) -->
+    {% if request.GET.next %}       <!--If the next parameter exits-->
+    <input type="hidden" value="{{ request.GET.next }}" name="next">
+    {% endif %}
+    <input type="submit" value="LogIn!">    <!--Now when user will subit the form... hidden's value will also go included in request object -->
+</form>
+
+{% endblock %}

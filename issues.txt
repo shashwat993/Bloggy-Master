@@ -1,0 +1,1 @@
+check for login and logout from blog.. some security issues might be there!
